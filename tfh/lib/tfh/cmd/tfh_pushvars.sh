@@ -738,7 +738,7 @@ tfh_pushvars () {
   # or updated, along with the properties that that list should abide by.
 
   #            variable list     type      hcl   sensitive
-  process_vars "$defaultvars"    terraform true false
+  process_vars "$defaultvars"    terraform false false
   process_vars "$defaulthclvars" terraform true  false
   process_vars "$vars"           terraform true false
   process_vars "$hclvars"        terraform true  false
